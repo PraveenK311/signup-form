@@ -3,14 +3,16 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div class="wrapper">
       <div class="title-text">
+        <i class="fa fa-github" style="font-size:48px"></i>
         <div class="title login">
-Login Form</div>
+Github</div>
 <div class="title signup">
 Signup Form</div>
 </div>
@@ -18,8 +20,8 @@ Signup Form</div>
         <div class="slide-controls">
           <input type="radio" name="slide" id="login" checked>
           <input type="radio" name="slide" id="signup">
-          <label for="login" class="slide login">Login</label>
-          <label for="signup" class="slide signup">Signup</label>
+          <label for="login" class="slide login">Login into Github</label>
+          <label for="signup" class="slide signup">Signup </label>
           <div class="slider-tab">
 </div>
 </div>
@@ -32,16 +34,16 @@ Signup Form</div>
               <input type="password" placeholder="Password" required>
             </div>
 <div class="pass-link">
-<a href="#">Forgot password?</a></div>
+<a href="https://github.com/password_reset">Forgot password?</a></div>
 <div class="field btn">
               <div class="btn-layer">
 </div>
 <input type="submit" value="Login">
             </div>
 <div class="signup-link">
-Not a member? <a href="">Signup now</a></div>
+Create an Account? <a href="https://github.com/join">Signup now</a></div>
 </form>
-<form action="#" class="signup">
+<form action="loginformdetails" class="signup">
             <div class="field">
               <input type="text" placeholder="Email Address" required>
             </div>
@@ -70,15 +72,19 @@ Not a member? <a href="">Signup now</a></div>
         loginForm.style.marginLeft = "-50%";
         loginText.style.marginLeft = "-50%";
       });
-      loginBtn.onclick = (()=>{
+      loginBtn.onclick = (( src =>
+)=>{
         loginForm.style.marginLeft = "0%";
         loginText.style.marginLeft = "0%";
       });
       signupLink.onclick = (()=>{
         signupBtn.click();
-        return false;
+        return true;
       });
-    </script>
+    </script>    
 
+   
+   
   </body>
 </html>
+
